@@ -94,10 +94,10 @@
 
         layer_1 {
             bindings = <
-&kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                              &trans  &trans  &trans  &trans  &trans
-&kp SEMI          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                              &trans  &trans  &trans  &trans  &trans  &trans
-&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans            &trans        &trans        &kp PERIOD    &kp NUMBER_0       &kp SINGLE_QUOTE    &trans  &trans                          &trans
+&kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET                                                 &kp LC(LG(UP_ARROW))    &trans                      &trans                 &trans                       &trans
+&kp SEMI          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL                                   &kp LG(LC(UP_ARROW))  &kp LG(LC(LEFT_ARROW))  &kp LA(LG(LC(LEFT_ARROW)))  &kp LA(LS(LG(EQUAL)))  &kp LA(LG(LC(RIGHT_ARROW)))  &kp LG(LC(RIGHT_ARROW))
+&kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &kp LG(LA(LS(LC(R))))    &kp LG(LC(DOWN))      &kp LC(LEFT_ARROW)      &trans                      &trans                 &trans                       &kp RIGHT_ARROW
+&trans            &trans        &trans        &kp PERIOD    &kp NUMBER_0       &kp SINGLE_QUOTE         &trans                &trans                                                                                                  &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -138,10 +138,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans    &mkp MB3  &trans    &trans                    &trans  &trans    &mkp MB3  &trans    &trans
-&trans  &mkp MB2  &mo 3     &mkp MB1  &trans            &trans  &trans  &mkp MB1  &mo 3     &mkp MB2  &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                                &trans
+&trans  &trans    &mkp MB3  &trans    &trans                    &trans         &trans    &mkp MB3  &trans    &trans
+&trans  &mkp MB2  &mo 3     &mkp MB1  &trans            &trans  &kp LG(RIGHT)  &mkp MB1  &mo 3     &mkp MB2  &trans
+&trans  &trans    &trans    &trans    &trans  &trans    &trans  &kp LG(LEFT)   &trans    &trans    &trans    &trans
+&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                                       &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
